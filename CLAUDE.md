@@ -55,3 +55,39 @@ Chaque scroll doit déclencher du mouvement, comme un motion design. Le site ne 
 - Dégradés violet/rose génériques « IA » sans identité.
 - Emojis comme icônes (préférer des icônes SVG).
 - Plus de 2 polices ou trop de couleurs.
+
+## Niveau supérieur : sites « expérience » (références vidéos : Pulpa, Bordeaux Nail Studio, Marcelo Design X)
+
+Analysé à partir de 3 enregistrements. Un premier jet correct ne suffit pas : viser ce niveau. Le site doit se vivre comme un court-métrage piloté par le scroll, pas comme une page de sections.
+
+### 1. Un seul sujet héros, ultra-travaillé
+- Chaque site a UN visuel star plein écran (produit, portrait, objet, scène), photoréaliste ou rendu 3D, éclairé comme une pub. Exemples : bague dorée dans un ciel de nuages, gobelet de smoothie, mannequin sur fond magenta, carte bancaire devant un coucher de soleil.
+- Univers monochrome saturé par site (rose, bleu nuit, jaune, bordeaux), avec une palette réduite à 2–3 couleurs maximum.
+- Les captures d'écran de l'ancien site ne suffisent pas pour ce niveau : demander (ou proposer de générer) des images haute définition du sujet, idéalement des détourages en calques séparés (sujet, mains, ombres, accessoires) ou un modèle 3D `.glb`.
+
+### 2. Une scène continue, pas des sections empilées
+- Le sujet persiste d'une section à l'autre (il change de saveur, de pose ou de cadrage) pendant que le fond change de couleur avec un fondu, un rideau ou une explosion de matière. Ex. : le gobelet reste au centre, le fond passe violet → jaune → bleu → orange.
+- Entrées de scène par traversée : zoom à travers une porte, un anneau, un globe. Le changement de section est un mouvement de caméra, jamais une coupure.
+- Écran d'intro (loader) soigné : un petit objet animé (globe, porte qui s'ouvre) qui annonce l'univers avant le hero.
+
+### 3. La typographie comme décor
+- Mots géants (FRUIT, MANGO ✦ STRAWBERRY, bordeaux.) qui servent de scène : placés derrière le sujet, coupés par lui, ou défilant en bandeau infini au rythme du scroll.
+- Mélange d'une grotesque très grasse ou condensée et d'une serif italique élégante pour les phrases d'accroche courtes (« Not a salon. A ritual. »). Pas plus de 2 familles.
+- Phrases d'accroche de 3 à 8 mots, une idée par écran, révélées mot par mot, parfois partiellement masquées par le sujet.
+
+### 4. Profondeur et matière
+- Calques à vitesses de parallaxe différentes : arrière-plan, texte, sujet, éléments flottants (fruits, mains, éclats) devant le texte.
+- Éléments flottants : pastilles/étiquettes (« Nail Extensions », « 100 % fruit »), autocollants, bulles, particules, qui bougent à contre-sens du sujet.
+- Fonds en matière vivante plutôt qu'en aplat : nuages, fumée, brume colorée ou bulles, via un shader WebGL (bruit fractal) ou une vidéo compressée, avec grain léger et flou de profondeur sur les calques éloignés.
+- Masques et formes : images dans des cercles ou des arches, grandes courbes noires qui glissent, reflet du produit au sol.
+
+### 5. Rythme entre les sections
+- Alterner mondes sombres et saturés avec une respiration claire (fond blanc cassé, texte serif, listes épurées) pour les infos pratiques : services, tarifs, contact.
+- Navigation minuscule, presque invisible ; pas de blocs de texte à lire dans les écrans « spectacle ».
+- Le dernier écran reprend le sujet et le mot-marque géant (signature), avec un seul appel à l'action.
+
+### 6. Méthode de travail pour un nouveau site
+1. Définir le sujet héros, l'univers de couleurs et la phrase signature avant tout code.
+2. Lister les visuels nécessaires (calques, modèle 3D, textures) et les demander si absents. Ne pas se contenter de recadrer des captures d'écran.
+3. Construire la scène continue (une timeline globale GSAP + scène Three.js persistante), puis les sections qui s'y accrochent.
+4. Tester au scroll à plusieurs positions (captures Playwright), sur mobile et en `prefers-reduced-motion`.
