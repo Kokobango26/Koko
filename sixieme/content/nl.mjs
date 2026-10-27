@@ -1,0 +1,275 @@
+// Nederlands. De tekst over het restaurant is gebaseerd op de Nederlandse tekst van de oorspronkelijke site.
+// Overige teksten (interface, juridische pagina's) zijn nieuw: laten nalezen door een Nederlandstalige.
+export default {
+  code: 'nl',
+  htmlLang: 'nl-BE',
+  ogLocale: 'nl_BE',
+  label: 'Nederlands',
+  slugs: { menu: 'menukaart', book: 'reserveren', contact: 'contact', legal: 'juridische-vermeldingen', privacy: 'privacy-en-cookies' },
+  days: ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'],
+  money: (n) => `€ ${n}`,
+  todo: '[aan te vullen]',
+
+  ui: {
+    skip: 'Naar de inhoud',
+    nav: { home: 'Home', restaurant: 'Het restaurant', menu: 'De kaart', book: 'Reserveren', contact: 'Contact' },
+    menuOpen: 'Menu',
+    menuClose: 'Sluiten',
+    langLabel: 'Taal',
+    mainNav: 'Hoofdnavigatie',
+    footerNav: 'Pagina’s van de site',
+    seeMenu: 'Bekijk de kaart',
+    callUs: 'Bellen',
+    directions: 'Route',
+    restaurantWord: 'Restaurant',
+  },
+
+  status: {
+    open: 'Nu open · tot {time}',
+    later: 'Gesloten · opent om {time}',
+    tomorrow: 'Gesloten · opent morgen om {time}',
+    day: 'Gesloten · opent {day} om {time}',
+  },
+
+  tags: { new: 'Nieuw', fish: 'Vis', crustacean: 'Schaaldier', mushroom: 'Paddenstoel', meat: 'Vlees' },
+
+  meta: {
+    home: {
+      title: 'Le Sixième – Restaurant in Jodoigne',
+      description: 'Franse keuken in Jodoigne. Verse, lokale producten, houtskooloven Josper, een korte kaart volgens het seizoen. Online reserveren of bel 010 45 10 01.',
+    },
+    menu: {
+      title: 'De kaart – Le Sixième, Jodoigne',
+      description: 'Voorgerechten, hoofdgerechten, kazen en desserten van restaurant Le Sixième in Jodoigne. Menu met 3 gangen € 54, menu met 4 gangen € 66.',
+    },
+    book: {
+      title: 'Een tafel reserveren – Le Sixième, Jodoigne',
+      description: 'Reserveer uw tafel in restaurant Le Sixième in Jodoigne, online of telefonisch op 010 45 10 01.',
+    },
+    contact: {
+      title: 'Contact en route – Le Sixième, Jodoigne',
+      description: 'Avenue Fernand Charlot 2, 1370 Jodoigne. Telefoon 010 45 10 01. Openingsuren, route en parking.',
+    },
+    legal: { title: 'Juridische vermeldingen – Le Sixième', description: 'Juridische vermeldingen van de website van restaurant Le Sixième in Jodoigne.' },
+    privacy: { title: 'Privacy en cookies – Le Sixième', description: 'Privacybeleid en cookiebeleid van de website van restaurant Le Sixième.' },
+  },
+
+  home: {
+    hero: {
+      eyebrow: 'Restaurant · Franse keuken · Jodoigne',
+      title: 'Wat je eet, <em>weerspiegelt wie je bent.</em>',
+      lead: 'Chef Clément en zijn team koken met verse, natuurlijke producten, zoveel mogelijk van lokale producenten, op de houtskooloven Josper.',
+      book: 'Een tafel reserveren',
+      menu: 'Ontdek de kaart',
+      michelin: 'Guide MICHELIN 2026',
+      imageAlt: 'Gerookte zalm, ingelegde pastinaak en broccoli op een zwart bord',
+    },
+    story: {
+      eyebrow: 'Het restaurant',
+      title: 'De Franse keuken <em>van Le Sixième</em>',
+      paragraphs: [
+        'Ervan overtuigd dat “wat je eet weerspiegelt wie je bent”, serveren Chef Clément en zijn team gerechten die bereid zijn met verse, natuurlijke ingrediënten, zoveel mogelijk afkomstig van lokale producenten.',
+        'De smaak van deze uitzonderlijke producten wordt versterkt door onze houtskooloven “Josper”.',
+        'De Franse keuken van Le Sixième zal je hart raken met deze unieke smaak. Het team van Le Sixième zorgt voor een unieke en bijzonder aangename ervaring. Tot ziens.',
+      ],
+      facts: [
+        { icon: 'leaf', text: 'Verse, natuurlijke producten van lokale producenten' },
+        { icon: 'flame', text: 'Houtskooloven Josper' },
+        { icon: 'snow', text: 'Airconditioning in de zaal' },
+        { icon: 'car', text: 'Parkeren mogelijk tegenover het restaurant' },
+      ],
+      imageAlt: 'De eetzaal: houten tafels, leren stoelen en open keuken',
+    },
+    menu: {
+      eyebrow: 'De kaart',
+      title: 'Een korte kaart, <em>volgens het seizoen</em>',
+      lead: 'Voorgerechten, hoofdgerechten, kaas en desserten, samen te stellen in drie of vier gangen.',
+      formulasTitle: 'De menu’s',
+      three: 'Menu met 3 gangen',
+      four: 'Menu met 4 gangen',
+      wine: 'Wijnselectie',
+      wineNote: 'bij de voor- en hoofdgerechten',
+      cta: 'Bekijk de volledige kaart',
+      captions: { entrees: 'Voorgerechten', plats: 'Hoofdgerechten', desserts: 'Desserten' },
+      alts: {
+        entrees: 'Gerookte zalm en ingelegde groenten op een zwart bord',
+        plats: 'Eendenfilet, geroosterde wortel en quinoa op een wit bord',
+        desserts: 'Huisgemaakte sorbets, vanillechantilly en chocoladeschilfers op een zwart bord',
+      },
+    },
+    reviews: {
+      eyebrow: 'Beoordelingen',
+      title: 'Wat gasten <em>zeggen</em>',
+      score: 'Google-score · {count} beoordelingen',
+      source: 'op',
+    },
+    visit: {
+      eyebrow: 'Vind ons',
+      title: 'Avenue Fernand Charlot 2, 1370 <em>Jodoigne</em>',
+      hours: 'Openingsuren',
+      closed: 'Gesloten',
+      lunchOnlyNote: 'Gesloten op dinsdag, woensdag en zaterdagmiddag.',
+      book: 'Online reserveren',
+      call: 'Bel het restaurant',
+      noteTitle: 'Goed om te weten',
+      notes: ['Parkeren mogelijk tegenover het restaurant', 'Airconditioning in de zaal'],
+    },
+  },
+
+  menuPage: {
+    eyebrow: 'Het menu',
+    title: 'De <em>kaart</em>',
+    lead: 'Een korte kaart volgens het seizoen. Ze verandert met de aanvoer.',
+    sections: { entrees: 'Voorgerechten', plats: 'Hoofdgerechten', fromage: 'Kaas', desserts: 'Desserten', formulas: 'Het menu' },
+    cheeseNote: '+ {price} ter vervanging van het dessert',
+    formulasTitle: 'Het menu',
+    three: '3 gangen',
+    four: '4 gangen',
+    wineTitle: 'Wijnselectie',
+    wineLead: 'Bij de voor- en hoofdgerechten',
+    wine3: 'bij het menu met 3 gangen',
+    wine4: 'bij het menu met 4 gangen',
+    notes: [
+      'Prijzen in euro, btw en service inbegrepen.',
+      'Allergie of bijzonder dieet? Meld het ons vóór u bestelt: ons team informeert u over elk gerecht (EU-verordening nr. 1169/2011).',
+    ],
+    book: 'Een tafel reserveren',
+    tagsTitle: 'Legende',
+  },
+
+  book: {
+    eyebrow: 'Reservering',
+    title: 'Een tafel <em>reserveren</em>',
+    lead: 'Reserveer online of telefonisch. Het restaurant bevestigt uw reservering.',
+    phoneTitle: 'Telefonisch',
+    phoneNote: 'Voor een onmiddellijk antwoord',
+    hoursTitle: 'Openingsuren',
+    groupNote: 'Vanaf meer dan {max} personen: bel ons, dan regelen we uw tafel samen.',
+    cancelNote: 'Verhinderd? Verwittig ons telefonisch: zo komt de tafel vrij voor andere gasten.',
+    form: {
+      date: 'Datum',
+      time: 'Uur',
+      guests: 'Aantal personen',
+      guestOne: '{n} persoon',
+      guestMany: '{n} personen',
+      name: 'Naam',
+      phone: 'Telefoon',
+      email: 'E-mail',
+      note: 'Opmerking (allergieën, gelegenheid…)',
+      noteHint: 'Optioneel',
+      consent: 'Ik heb het <a href="{privacy}">privacybeleid</a> gelezen en ga ermee akkoord dat mijn gegevens worden gebruikt om mijn reservering te verwerken.',
+      submit: 'Aanvraag versturen',
+      choose: 'Kies…',
+      lunch: 'Middag',
+      dinner: 'Avond',
+    },
+    msg: {
+      pickDate: 'Kies eerst een datum.',
+      closedDay: 'Het restaurant is die dag gesloten (gesloten op dinsdag, woensdag en zaterdagmiddag). Kies een andere datum.',
+      noSlot: 'Er zijn vandaag online geen tijdstippen meer beschikbaar. Bel ons op {phone}.',
+      required: 'Vul dit veld in.',
+      email: 'Geef een geldig e-mailadres op.',
+      phone: 'Geef een geldig telefoonnummer op.',
+      consent: 'Ga akkoord met het privacybeleid.',
+      sending: 'Bezig met versturen…',
+      sent: 'Bedankt! Uw aanvraag is verstuurd. Het restaurant bevestigt de reservering telefonisch of per e-mail.',
+      mailto: 'Uw e-mailapp opent met uw aanvraag al ingevuld. Verstuur ze om ze aan het restaurant door te geven. Voor een onmiddellijk antwoord: {phone}.',
+      error: 'Het versturen is mislukt. Bel ons op {phone} of mail naar {email}.',
+    },
+    mail: {
+      subject: 'Reservering – {date} om {time} – {guests}',
+      body: 'Goedendag,\n\nIk wil graag een tafel reserveren:\n- Datum: {date}\n- Uur: {time}\n- Personen: {guests}\n- Naam: {name}\n- Telefoon: {phone}\n- E-mail: {email}\n- Opmerking: {note}\n\nBedankt.',
+    },
+    noscript: 'Deze pagina heeft JavaScript nodig om de tijdstippen te tonen. Bel ons anders op {phone} of mail naar {email}.',
+  },
+
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Naar <em>Le Sixième</em>',
+    lead: 'Een vraag, een reservering, een allergie om te melden: bellen is het eenvoudigst.',
+    address: 'Adres',
+    phone: 'Reservering',
+    email: 'E-mail',
+    hours: 'Openingsuren',
+    access: 'Bereikbaarheid',
+    accessText: 'Parkeren mogelijk tegenover het restaurant. Airconditioning in de zaal.',
+    mapTitle: 'Kaart',
+    mapButton: 'Kaart tonen',
+    mapConsent: 'Door de kaart te tonen, gaat u ermee akkoord dat Google Maps gegevens van zijn servers laadt (zie het <a href="{privacy}">privacybeleid</a>).',
+    mapFrame: 'Google Maps-kaart van restaurant Le Sixième',
+    facadeAlt: 'De gevel van het restaurant op de hoek van de Avenue Fernand Charlot in Jodoigne',
+    directions: 'Route',
+  },
+
+  footer: {
+    tagline: 'Restaurant · Franse keuken · Jodoigne',
+    contact: 'Contact',
+    pages: 'De site',
+    legal: 'Juridische vermeldingen',
+    privacy: 'Privacy en cookies',
+    rights: 'Alle rechten voorbehouden.',
+    social: 'Sociale media',
+  },
+
+  legal: {
+    eyebrow: 'Informatie',
+    title: 'Juridische <em>vermeldingen</em>',
+    updated: 'Laatst bijgewerkt: oktober 2026',
+    sections: [
+      {
+        h: 'Uitgever van de site',
+        html: '<p>Deze site wordt uitgegeven door <strong>{{company}}</strong> ({{legalForm}}), uitbater van restaurant “Le Sixième”.</p><p>Zetel en adres van het restaurant: {{address}}.<br>Ondernemingsnummer (KBO): {{bce}}<br>Btw-nummer: {{vat}}<br>Telefoon: {{phone}}<br>E-mail: {{email}}</p><p>Verantwoordelijke uitgever: {{publisher}}.</p>',
+      },
+      { h: 'Hosting', html: '<p>De site wordt gehost door {{host}}.</p>' },
+      {
+        h: 'Prijzen, kaart en allergenen',
+        html: '<p>De prijzen zijn vermeld in euro, btw en service inbegrepen. De kaart verandert met de seizoenen en de aanvoer; de getoonde gerechten en prijzen zijn indicatief.</p><p>Voor informatie over allergenen kunt u terecht bij ons team, vóór u bestelt (EU-verordening nr. 1169/2011).</p>',
+      },
+      {
+        h: 'Reserveringen',
+        html: '<p>Een reserveringsaanvraag via deze site is pas bevestigd nadat het restaurant heeft geantwoord. Bent u verhinderd, verwittig ons dan telefonisch.</p>',
+      },
+      {
+        h: 'Intellectuele eigendom',
+        html: '<p>De teksten, foto’s, het logo en de grafische elementen van de site zijn beschermd. Elke reproductie of hergebruik zonder schriftelijke toestemming van het restaurant is verboden. De geciteerde beoordelingen komen van Google en Tripadvisor en worden weergegeven met voornaam en initiaal van de auteur.</p>',
+      },
+      {
+        h: 'Aansprakelijkheid',
+        html: '<p>We zorgen voor correcte informatie, maar fouten of gewijzigde openingsuren zijn mogelijk. Bel ons bij twijfel. Voor links naar externe sites is het restaurant niet aansprakelijk.</p>',
+      },
+      { h: 'Toepasselijk recht', html: '<p>Het Belgisch recht is van toepassing. Bij geschillen zijn de Belgische rechtbanken bevoegd.</p>' },
+    ],
+  },
+
+  privacy: {
+    eyebrow: 'Informatie',
+    title: 'Privacy <em>en cookies</em>',
+    updated: 'Laatst bijgewerkt: oktober 2026',
+    sections: [
+      {
+        h: 'Wie is verantwoordelijk voor uw gegevens?',
+        html: '<p>Verwerkingsverantwoordelijke is <strong>{{company}}</strong>, {{address}}. Vragen: {{email}} of {{phone}}.</p>',
+      },
+      {
+        h: 'Welke gegevens en waarvoor?',
+        html: '<p>Wanneer u een reservering aanvraagt, verzamelen we uw naam, telefoonnummer, e-mailadres, de datum, het uur, het aantal personen en eventueel een opmerking. Die gegevens dienen uitsluitend om uw reservering te verwerken en te bevestigen (art. 6.1.b AVG) en om uw berichten te beantwoorden (art. 6.1.f).</p><p>Meldt u een allergie of een dieet, dan gebruiken we die informatie alleen om uw maaltijd voor te bereiden; door ze door te geven, stemt u in met die verwerking.</p><p>De site biedt geen klantenaccount en geen online betaling.</p>',
+      },
+      {
+        h: 'Wie ontvangt die gegevens?',
+        html: '<p>Het team van het restaurant en onze technische dienstverleners (hosting van de site, e-mail). Uw gegevens worden niet verkocht en niet voor reclamedoeleinden gebruikt.</p>',
+      },
+      {
+        h: 'Hoelang?',
+        html: '<p>De gegevens van een reservering worden hoogstens 3 maanden na de reserveringsdatum bewaard en daarna gewist.</p>',
+      },
+      {
+        h: 'Uw rechten',
+        html: '<p>U kunt toegang tot uw gegevens vragen, ze laten verbeteren of wissen, de verwerking laten beperken, bezwaar maken of overdraagbaarheid vragen via {{email}}.</p><p>U kunt ook een klacht indienen bij de Gegevensbeschermingsautoriteit, Drukpersstraat 35, 1000 Brussel, <a href="https://www.gegevensbeschermingsautoriteit.be" rel="noopener">gegevensbeschermingsautoriteit.be</a>, contact@apd-gba.be.</p>',
+      },
+      {
+        h: 'Cookies en externe inhoud',
+        html: '<p>Deze site gebruikt geen advertentiecookies of meettools en plaatst zelf geen cookies. De lettertypes worden op de site zelf gehost.</p><p>De kaart op de contactpagina wordt geleverd door Google Maps. Ze wordt pas geladen nadat u op “Kaart tonen” hebt geklikt: Google ontvangt dan uw IP-adres en kan cookies plaatsen, volgens <a href="https://policies.google.com/privacy" rel="noopener">zijn privacybeleid</a>. Zonder klik wordt niets naar Google verstuurd.</p>',
+      },
+    ],
+  },
+};

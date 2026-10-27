@@ -1,0 +1,275 @@
+// Français – langue de référence. Les textes du restaurant (histoire, horaires, carte, coordonnées)
+// sont repris du site d'origine ; les formulations d'interface et pages légales sont rédigées pour ce site.
+export default {
+  code: 'fr',
+  htmlLang: 'fr-BE',
+  ogLocale: 'fr_BE',
+  label: 'Français',
+  slugs: { menu: 'carte', book: 'reserver', contact: 'contact', legal: 'mentions-legales', privacy: 'confidentialite' },
+  days: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+  money: (n) => `${n} €`,
+  todo: '[à compléter]',
+
+  ui: {
+    skip: 'Aller au contenu',
+    nav: { home: 'Accueil', restaurant: 'Le restaurant', menu: 'La carte', book: 'Réserver', contact: 'Contact' },
+    menuOpen: 'Menu',
+    menuClose: 'Fermer',
+    langLabel: 'Langue',
+    mainNav: 'Navigation principale',
+    footerNav: 'Pages du site',
+    seeMenu: 'Voir la carte',
+    callUs: 'Appeler',
+    directions: 'Itinéraire',
+    restaurantWord: 'Restaurant',
+  },
+
+  status: {
+    open: 'Ouvert maintenant · jusqu’à {time}',
+    later: 'Fermé · ouvre à {time}',
+    tomorrow: 'Fermé · réouvre demain à {time}',
+    day: 'Fermé · réouvre {day} à {time}',
+  },
+
+  tags: { new: 'Nouveau', fish: 'Poisson', crustacean: 'Crustacé', mushroom: 'Champignon', meat: 'Viande' },
+
+  meta: {
+    home: {
+      title: 'Le Sixième – Restaurant à Jodoigne',
+      description: 'Restaurant de cuisine française à Jodoigne. Produits frais et locaux, four à charbon Josper, carte courte au fil des saisons. Réservation en ligne ou au 010 45 10 01.',
+    },
+    menu: {
+      title: 'La carte – Le Sixième, Jodoigne',
+      description: 'Entrées, plats, fromages et desserts du restaurant Le Sixième à Jodoigne. Menu 3 services 54 €, menu 4 services 66 €.',
+    },
+    book: {
+      title: 'Réserver une table – Le Sixième, Jodoigne',
+      description: 'Réservez votre table au restaurant Le Sixième à Jodoigne, en ligne ou par téléphone au 010 45 10 01.',
+    },
+    contact: {
+      title: 'Contact et accès – Le Sixième, Jodoigne',
+      description: 'Avenue Fernand Charlot 2, 1370 Jodoigne. Téléphone 010 45 10 01. Horaires, accès et parking.',
+    },
+    legal: { title: 'Mentions légales – Le Sixième', description: 'Mentions légales du site du restaurant Le Sixième à Jodoigne.' },
+    privacy: { title: 'Confidentialité et cookies – Le Sixième', description: 'Politique de confidentialité et d’utilisation des cookies du site du restaurant Le Sixième.' },
+  },
+
+  home: {
+    hero: {
+      eyebrow: 'Restaurant · Cuisine française · Jodoigne',
+      title: 'Ce que vous mangez <em>reflète qui vous êtes.</em>',
+      lead: 'Le Chef Clément et son équipe cuisinent des produits frais et naturels, issus autant que possible de producteurs locaux, au four à charbon Josper.',
+      book: 'Réserver une table',
+      menu: 'Découvrir la carte',
+      michelin: 'Guide MICHELIN 2026',
+      imageAlt: 'Saumon fumé, panais en pickles et brocoli dressés sur une assiette noire',
+    },
+    story: {
+      eyebrow: 'Le restaurant',
+      title: 'La cuisine française <em>du Sixième</em>',
+      paragraphs: [
+        'Convaincu que « ce que vous mangez reflète qui vous êtes », le Chef Clément et ses collaborateurs servent des plats préparés avec des ingrédients frais et naturels issus autant que possible de producteurs locaux.',
+        'Afin de déployer toutes leurs saveurs, nous utilisons notre incroyable four à charbon « Josper ».',
+        'La cuisine française du Sixième touchera vos cœurs grâce à ce goût unique. L’équipe du Sixième met tout en œuvre pour que vous passiez un moment délicieux. À bientôt.',
+      ],
+      facts: [
+        { icon: 'leaf', text: 'Produits frais et naturels, de producteurs locaux' },
+        { icon: 'flame', text: 'Four à charbon Josper' },
+        { icon: 'snow', text: 'Salle climatisée' },
+        { icon: 'car', text: 'Possibilité de parking en face du restaurant' },
+      ],
+      imageAlt: 'La salle du restaurant : tables en bois, chaises cuir et cuisine ouverte',
+    },
+    menu: {
+      eyebrow: 'La carte',
+      title: 'Une carte courte, <em>au fil des saisons</em>',
+      lead: 'Entrées, plats, fromages et desserts, à composer en trois ou quatre services.',
+      formulasTitle: 'Les formules',
+      three: 'Menu 3 services',
+      four: 'Menu 4 services',
+      wine: 'Sélection de vins',
+      wineNote: 'en accompagnement des entrées et des plats',
+      cta: 'Voir la carte complète',
+      captions: { entrees: 'Les entrées', plats: 'Les plats', desserts: 'Les desserts' },
+      alts: {
+        entrees: 'Saumon fumé et légumes en pickles sur une assiette noire',
+        plats: 'Filet de canard, carotte rôtie et quinoa sur une assiette blanche',
+        desserts: 'Sorbets maison, chantilly vanille et éclats de chocolat sur une assiette noire',
+      },
+    },
+    reviews: {
+      eyebrow: 'Avis',
+      title: 'Ils en <em>parlent</em>',
+      score: 'Note Google · {count} avis',
+      source: 'sur',
+    },
+    visit: {
+      eyebrow: 'Nous trouver',
+      title: 'Avenue Fernand Charlot 2, 1370 <em>Jodoigne</em>',
+      hours: 'Horaires',
+      closed: 'Fermé',
+      lunchOnlyNote: 'Fermé le mardi, le mercredi et le samedi midi.',
+      book: 'Réserver en ligne',
+      call: 'Appeler le restaurant',
+      noteTitle: 'Bon à savoir',
+      notes: ['Possibilité de parking en face du restaurant', 'Salle climatisée'],
+    },
+  },
+
+  menuPage: {
+    eyebrow: 'Le menu',
+    title: 'La <em>carte</em>',
+    lead: 'Carte courte, de saison. Elle évolue au fil des arrivages.',
+    sections: { entrees: 'Les entrées', plats: 'Les plats', fromage: 'Le fromage', desserts: 'Les desserts', formulas: 'Le menu' },
+    cheeseNote: '+ {price} en remplacement du dessert',
+    formulasTitle: 'Le menu',
+    three: '3 services',
+    four: '4 services',
+    wineTitle: 'Sélection de vins',
+    wineLead: 'En accompagnement des entrées et des plats',
+    wine3: 'avec le menu 3 services',
+    wine4: 'avec le menu 4 services',
+    notes: [
+      'Prix en euros, taxes et service compris.',
+      'Allergies ou régime particulier ? Prévenez-nous avant de commander : notre équipe vous renseigne sur chaque plat (règlement UE n° 1169/2011).',
+    ],
+    book: 'Réserver une table',
+    tagsTitle: 'Repères',
+  },
+
+  book: {
+    eyebrow: 'Réservation',
+    title: 'Réserver <em>une table</em>',
+    lead: 'Réservez en ligne ou par téléphone. Votre réservation est confirmée par le restaurant.',
+    phoneTitle: 'Par téléphone',
+    phoneNote: 'Pour une réponse immédiate',
+    hoursTitle: 'Horaires',
+    groupNote: 'Au-delà de {max} personnes, appelez-nous : nous organisons votre table avec vous.',
+    cancelNote: 'Un empêchement ? Prévenez-nous par téléphone : cela libère la table pour d’autres convives.',
+    form: {
+      date: 'Date',
+      time: 'Heure',
+      guests: 'Nombre de personnes',
+      guestOne: '{n} personne',
+      guestMany: '{n} personnes',
+      name: 'Nom',
+      phone: 'Téléphone',
+      email: 'E-mail',
+      note: 'Remarque (allergies, occasion…)',
+      noteHint: 'Facultatif',
+      consent: 'J’ai lu la <a href="{privacy}">politique de confidentialité</a> et j’accepte que mes données servent à traiter ma réservation.',
+      submit: 'Envoyer la demande',
+      choose: 'Choisir…',
+      lunch: 'Midi',
+      dinner: 'Soir',
+    },
+    msg: {
+      pickDate: 'Choisissez d’abord une date.',
+      closedDay: 'Le restaurant est fermé ce jour-là (fermé le mardi, le mercredi et le samedi midi). Choisissez une autre date.',
+      noSlot: 'Il n’y a plus de créneau en ligne pour aujourd’hui. Appelez-nous au {phone}.',
+      required: 'Merci de compléter ce champ.',
+      email: 'Merci d’indiquer une adresse e-mail valide.',
+      phone: 'Merci d’indiquer un numéro de téléphone valide.',
+      consent: 'Merci d’accepter la politique de confidentialité.',
+      sending: 'Envoi en cours…',
+      sent: 'Merci ! Votre demande est envoyée. Le restaurant vous confirme la réservation par téléphone ou par e-mail.',
+      mailto: 'Votre application e-mail s’ouvre avec votre demande déjà rédigée. Envoyez-la pour la transmettre au restaurant. Pour une réponse immédiate : {phone}.',
+      error: 'L’envoi a échoué. Appelez-nous au {phone} ou écrivez à {email}.',
+    },
+    mail: {
+      subject: 'Réservation – {date} à {time} – {guests}',
+      body: 'Bonjour,\n\nJe souhaite réserver une table :\n- Date : {date}\n- Heure : {time}\n- Personnes : {guests}\n- Nom : {name}\n- Téléphone : {phone}\n- E-mail : {email}\n- Remarque : {note}\n\nMerci.',
+    },
+    noscript: 'Cette page demande JavaScript pour afficher les créneaux. Sans cela, appelez-nous au {phone} ou écrivez à {email}.',
+  },
+
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Venir <em>au Sixième</em>',
+    lead: 'Une question, une réservation, une allergie à signaler : le plus simple est de nous appeler.',
+    address: 'Adresse',
+    phone: 'Réservation',
+    email: 'E-mail',
+    hours: 'Horaires',
+    access: 'Accès',
+    accessText: 'Possibilité de parking en face du restaurant. Salle climatisée.',
+    mapTitle: 'Plan',
+    mapButton: 'Afficher la carte',
+    mapConsent: 'En affichant la carte, vous acceptez que Google Maps charge des données depuis ses serveurs (voir la <a href="{privacy}">politique de confidentialité</a>).',
+    mapFrame: 'Carte Google Maps du restaurant Le Sixième',
+    facadeAlt: 'La façade du restaurant, au coin de l’avenue Fernand Charlot, à Jodoigne',
+    directions: 'Itinéraire',
+  },
+
+  footer: {
+    tagline: 'Restaurant · Cuisine française · Jodoigne',
+    contact: 'Contact',
+    pages: 'Le site',
+    legal: 'Mentions légales',
+    privacy: 'Confidentialité et cookies',
+    rights: 'Tous droits réservés.',
+    social: 'Réseaux sociaux',
+  },
+
+  legal: {
+    eyebrow: 'Informations',
+    title: 'Mentions <em>légales</em>',
+    updated: 'Dernière mise à jour : octobre 2026',
+    sections: [
+      {
+        h: 'Éditeur du site',
+        html: '<p>Ce site est édité par <strong>{{company}}</strong> ({{legalForm}}), qui exploite le restaurant « Le Sixième ».</p><p>Siège et adresse du restaurant : {{address}}.<br>Numéro d’entreprise (BCE) : {{bce}}<br>N° de TVA : {{vat}}<br>Téléphone : {{phone}}<br>E-mail : {{email}}</p><p>Responsable de la publication : {{publisher}}.</p>',
+      },
+      { h: 'Hébergement', html: '<p>Le site est hébergé par {{host}}.</p>' },
+      {
+        h: 'Prix, carte et allergènes',
+        html: '<p>Les prix sont indiqués en euros, taxes et service compris. La carte évolue selon les saisons et les arrivages ; les plats et prix présentés le sont à titre indicatif.</p><p>Pour toute information sur les allergènes, demandez à notre équipe avant de commander (règlement UE n° 1169/2011).</p>',
+      },
+      {
+        h: 'Réservations',
+        html: '<p>Une demande de réservation envoyée depuis ce site n’est confirmée qu’après réponse du restaurant. En cas d’empêchement, merci de nous prévenir par téléphone.</p>',
+      },
+      {
+        h: 'Propriété intellectuelle',
+        html: '<p>Les textes, photographies, logo et éléments graphiques du site sont protégés. Toute reproduction ou réutilisation sans l’accord écrit du restaurant est interdite. Les avis cités proviennent de Google et de Tripadvisor ; ils sont reproduits avec le prénom et l’initiale de leur auteur.</p>',
+      },
+      {
+        h: 'Responsabilité',
+        html: '<p>Nous veillons à l’exactitude des informations publiées, mais des erreurs ou des changements d’horaires restent possibles. En cas de doute, appelez-nous. Les liens vers des sites extérieurs n’engagent pas la responsabilité du restaurant.</p>',
+      },
+      { h: 'Droit applicable', html: '<p>Le droit belge est applicable. En cas de litige, les tribunaux belges sont compétents.</p>' },
+    ],
+  },
+
+  privacy: {
+    eyebrow: 'Informations',
+    title: 'Confidentialité <em>et cookies</em>',
+    updated: 'Dernière mise à jour : octobre 2026',
+    sections: [
+      {
+        h: 'Qui est responsable de vos données ?',
+        html: '<p>Le responsable du traitement est <strong>{{company}}</strong>, {{address}}. Pour toute question : {{email}} ou {{phone}}.</p>',
+      },
+      {
+        h: 'Quelles données, pour quoi faire ?',
+        html: '<p>Lorsque vous demandez une réservation, nous recueillons votre nom, votre téléphone, votre e-mail, la date, l’heure, le nombre de personnes et, si vous le souhaitez, une remarque. Ces données servent uniquement à traiter et confirmer votre réservation (art. 6.1.b du RGPD) et à répondre à vos messages (art. 6.1.f).</p><p>Si vous nous signalez une allergie ou un régime alimentaire, cette information sert uniquement à préparer votre repas ; en la communiquant, vous consentez à ce traitement.</p><p>Le site ne propose ni compte client ni paiement en ligne.</p>',
+      },
+      {
+        h: 'Qui reçoit ces données ?',
+        html: '<p>L’équipe du restaurant et nos prestataires techniques (hébergement du site, messagerie électronique). Vos données ne sont ni vendues ni utilisées à des fins publicitaires.</p>',
+      },
+      {
+        h: 'Combien de temps ?',
+        html: '<p>Les données d’une réservation sont conservées au maximum 3 mois après la date de la réservation, puis supprimées.</p>',
+      },
+      {
+        h: 'Vos droits',
+        html: '<p>Vous pouvez demander l’accès à vos données, leur rectification, leur effacement, la limitation du traitement, vous y opposer ou demander leur portabilité, en écrivant à {{email}}.</p><p>Vous pouvez aussi introduire une réclamation auprès de l’Autorité de protection des données, Rue de la Presse 35, 1000 Bruxelles, <a href="https://www.autoriteprotectiondonnees.be" rel="noopener">autoriteprotectiondonnees.be</a>, contact@apd-gba.be.</p>',
+      },
+      {
+        h: 'Cookies et contenus externes',
+        html: '<p>Ce site n’utilise ni cookie publicitaire ni outil de mesure d’audience, et ne dépose aucun cookie de lui-même. Les polices de caractères sont hébergées sur le site.</p><p>La carte de la page Contact est fournie par Google Maps. Elle n’est chargée qu’après votre clic sur « Afficher la carte » : Google reçoit alors votre adresse IP et peut déposer des cookies, selon <a href="https://policies.google.com/privacy" rel="noopener">sa politique de confidentialité</a>. Sans clic, rien n’est transmis à Google.</p>',
+      },
+    ],
+  },
+};
