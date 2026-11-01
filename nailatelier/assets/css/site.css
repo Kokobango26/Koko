@@ -184,6 +184,11 @@ mark.todo { background: #fff0b3; color: #6b4a00; padding: 0 .35em; border-radius
 .strip img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform 1.2s var(--ease); }
 .strip li:hover img { transform: scale(1.05); }
 
+.about { padding-bottom: var(--sec); }
+.about__grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(32px, 7vw, 110px); align-items: center; }
+.about .arch--s { max-width: 400px; }
+.pull { margin: 26px 0 0; font-family: var(--serif); font-style: italic; font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.1; color: var(--rose-deep); padding-left: 22px; border-left: 2px solid var(--gold); }
+.about .btn { margin-top: 30px; }
 .train { background: var(--sage-deep); color: var(--cream); padding-block: var(--sec); }
 .train__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 100px); align-items: center; }
 .train .h2 em { color: var(--blush-2); }
@@ -204,6 +209,8 @@ mark.todo { background: #fff0b3; color: #6b4a00; padding: 0 .35em; border-radius
 .split__grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 7vw, 110px); align-items: center; }
 .arch--s { aspect-ratio: 4 / 5; max-width: 460px; }
 .split__text p { color: var(--ink-2); margin-top: 18px; max-width: 34em; }
+.split__text p:first-child { margin-top: 0; }
+.split__text p b { color: var(--ink); font-weight: 600; }
 .split__text .h2 { margin-bottom: 8px; }
 .facts { display: grid; gap: 0; margin-top: 34px; border-top: 1px solid var(--line); }
 .facts li { display: flex; gap: 16px; align-items: flex-start; padding-block: 16px; border-bottom: 1px solid var(--line); }
@@ -292,7 +299,7 @@ mark.todo { background: #fff0b3; color: #6b4a00; padding: 0 .35em; border-radius
   .levels__grid, .levels__grid--page { grid-template-columns: repeat(2, 1fr); gap: 28px 18px; }
 }
 @media (max-width: 900px) {
-  .hero__grid, .levels__head, .train__in, .split__grid, .info-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero__grid, .levels__head, .train__in, .split__grid, .info-grid, .about__grid { grid-template-columns: minmax(0, 1fr); }
   .hero__visual { margin-inline: auto; width: min(80%, 380px); }
   .cards3, .values__grid { grid-template-columns: minmax(0, 1fr); }
   .strip { grid-template-columns: 1fr 1fr; }

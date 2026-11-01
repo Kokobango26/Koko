@@ -13,13 +13,13 @@ node nailatelier/build.mjs --production --clean-urls
 Tout le contenu est dans `content/data.mjs`.
 
 ## À compléter (champs surlignés en jaune sur le site)
-- Prénom et nom, adresse (rue, code postal), téléphone, e-mail, horaires d'ouverture.
+- Nom de famille de Manon (responsable de publication), adresse (rue, code postal), téléphone, e-mail, horaires d’ouverture.
 - Mentions légales : raison sociale, forme juridique, n° BCE, n° TVA, hébergeur.
 - Nom de domaine : `site.url` (thenailatelier.be est un nom inventé pour la maquette).
 
 ## À valider
 - Délai d'annulation : 48 h (proposition), et règle sur l'acompte de 20 € (report si prévenu à temps, sinon acquis).
-- Textes d'introduction (hygiène, qualité, confort, formation) : rédigés d'après la bio et les stories Instagram.
+- La page « L’atelier » reprend la publication de présentation de Manon (Instagram, 20 novembre 2025), passée au vouvoiement. Les autres textes d’introduction sont rédigés d’après la bio et les stories.
 - Tarifs : relevés sur la story du 20 juillet, à confirmer.
 
 ## Images

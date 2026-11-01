@@ -12,7 +12,8 @@ export const site = {
   phone: '', // à compléter (ex. '0470 12 34 56')
   email: '', // à compléter
   address: { street: '', zip: '', city: 'Jodoigne' }, // rue et code postal à compléter
-  owner: '', // prénom de la nail artist, à compléter
+  owner: 'Manon', // prénom (source : publication Instagram du 20 novembre 2025) ; nom de famille à compléter dans legal.publisher
+  opened: 'août 2024',
   // Horaires : à compléter. Format : { 1: [['09:00','18:00']], 2: [...] } avec 0 = dimanche … 6 = samedi.
   hours: {},
   deposit: 20, // acompte demandé à la réservation, en euros

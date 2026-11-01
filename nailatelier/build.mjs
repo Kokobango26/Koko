@@ -24,7 +24,7 @@ const PAGES = {
 };
 const META = {
   home: ['The Nail Atelier – Nails & self-care à Jodoigne', 'Salon de manucure à Jodoigne : gel, semi-permanent, nail art et soin des pieds. Hygiène, qualité et confort. Réservation en ligne.'],
-  atelier: ['L’atelier – The Nail Atelier, Jodoigne', 'Hygiène, qualité et confort : l’univers de The Nail Atelier, salon de manucure à Jodoigne, et sa démarche de formation continue.'],
+  atelier: ['L’atelier – Manon, The Nail Atelier, Jodoigne', 'Manon, nail artist à Jodoigne : un salon ouvert en août 2024, un moment rien que pour vous, sans pression et sans chichi.'],
   prestations: ['Prestations et tarifs – The Nail Atelier, Jodoigne', 'Tarifs et durées : semi-permanent renforcé, gel, extensions, soin des pieds et nail art en quatre niveaux, de 4 € à 20 €.'],
   realisations: ['Réalisations – The Nail Atelier, Jodoigne', 'Galerie de manucures et de nail art réalisés à Jodoigne : french, chrome, 3D et compositions sur mesure.'],
   reserver: ['Réserver et infos pratiques – The Nail Atelier', 'Réservation en ligne, acompte de 20 €, conditions d’annulation, horaires et contact de The Nail Atelier à Jodoigne.'],
@@ -246,10 +246,23 @@ function home(c) {
   </div>
 </section>
 
+<section class="about" aria-labelledby="ab-title">
+  <div class="wrap about__grid">
+    ${arch(c, 'manon', 'Manon, nail artist, assise à sa table de travail entre deux lampes', 1000, 1331, 'arch--s').replace('<figure class="arch arch--s">', '<figure class="arch arch--s" data-reveal data-parallax="0.03">')}
+    <div>
+      <p class="eyebrow" data-reveal>L’atelier</p>
+      <h2 class="h2" id="ab-title" data-reveal style="--d:.08s">Je m’appelle <em>Manon</em></h2>
+      <p class="lead" data-reveal style="--d:.14s">J’ai ouvert The Nail Atelier en ${site.opened}. Mon but est simple : vous offrir un moment rien que pour vous, sans pression et sans chichi.</p>
+      <blockquote class="pull" data-reveal style="--d:.2s">Chaque détail compte.</blockquote>
+      <a class="btn btn--line" data-reveal style="--d:.26s" href="${c.link('atelier')}">Faire connaissance${icon('arrow', 'ico ico--btn')}</a>
+    </div>
+  </div>
+</section>
+
 <section class="train" aria-labelledby="tr-title">
   <div class="wrap train__in">
-    <div><p class="eyebrow eyebrow--light" data-reveal>L’atelier</p><h2 class="h2" id="tr-title" data-reveal style="--d:.08s">Toujours en <em>formation</em></h2></div>
-    <div><p data-reveal style="--d:.12s">Manucure russe, retouche gainage… De nouvelles techniques sont intégrées petit à petit à l’institut, pour des résultats plus précis et plus durables.</p><a class="btn btn--light" data-reveal style="--d:.2s" href="${c.link('atelier')}">Découvrir l’atelier${icon('arrow', 'ico ico--btn')}</a></div>
+    <div><p class="eyebrow eyebrow--light" data-reveal>Formations</p><h2 class="h2" id="tr-title" data-reveal style="--d:.08s">Toujours en <em>formation</em></h2></div>
+    <div><p data-reveal style="--d:.12s">Certaines prestations sont arrivées au fil des formations et de l’évolution du salon. Manucure russe, retouche gainage… de nouvelles techniques sont intégrées petit à petit, avec soin.</p></div>
   </div>
 </section>
 
@@ -266,18 +279,19 @@ function home(c) {
 
 function atelier(c) {
   return page(c, `<main id="contenu">
-${pageHead('L’atelier', 'Un salon pensé <em>pour vous</em>', 'The Nail Atelier est un salon de manucure à Jodoigne, dédié aux soins des mains et des pieds et au nail art.')}
+${pageHead('L’atelier', 'Bonjour, <em>je suis Manon</em>', 'Nail artist et fondatrice de The Nail Atelier, à ' + site.city + '.')}
 <section class="split">
   <div class="wrap split__grid">
-    ${arch(c, 'niveau-3', 'Ongles nude avec lignes dorées en relief et petites perles', 1000, 1312, 'arch--s').replace('<figure class="arch arch--s">', '<figure class="arch arch--s" data-reveal data-parallax="0.03">')}
+    ${arch(c, 'manon', 'Manon, nail artist, assise à sa table de travail entre deux lampes', 1000, 1331, 'arch--s').replace('<figure class="arch arch--s">', '<figure class="arch arch--s" data-reveal data-parallax="0.03">')}
     <div class="split__text">
-      <h2 class="h2" data-reveal>Nails &amp; <em>self-care</em></h2>
-      <p data-reveal style="--d:.08s">Ici, la manucure est un temps pour soi. Gel, semi-permanent, extensions ou simple soin : chaque prestation est réalisée avec attention, dans le respect de la structure naturelle de l’ongle.</p>
-      <p data-reveal style="--d:.16s">Le nail art tient une place particulière. Quatre niveaux permettent de choisir précisément ce que vous souhaitez, du détail discret à la composition sur mesure.</p>
+      <p data-reveal>J’ai ouvert The Nail Atelier en ${site.opened}. Certaines prestations sont arrivées un peu plus tard, au fil de mes formations et de mon évolution.</p>
+      <p data-reveal style="--d:.06s">Je suis quelqu’un d’appliqué, qui aime prendre son temps. Je préfère avancer lentement mais sûrement : c’est comme ça que j’aime travailler, et c’est comme ça que j’aime prendre soin de vous. <b>Chaque détail compte.</b></p>
+      <p data-reveal style="--d:.12s">Ici, vous pouvez venir comme vous êtes. Pas besoin de vous maquiller, de vous apprêter ou de « faire un effort ». En jogging et en pantoufles, c’est parfait aussi. L’important, c’est que vous vous sentiez bien.</p>
+      <p data-reveal style="--d:.18s">Mon but est simple : vous offrir un moment rien que pour vous, sans pression et sans chichi. Un moment calme, un moment papote, ou un mélange des deux : c’est vous qui décidez du mood.</p>
       <ul class="facts" data-reveal style="--d:.24s">
         <li>${icon('drop')}<span><b>Hygiène</b>Une exigence à chaque rendez-vous.</span></li>
         <li>${icon('gem')}<span><b>Qualité</b>Des techniques choisies pour la tenue et la santé de l’ongle.</span></li>
-        <li>${icon('leaf')}<span><b>Confort</b>Un moment calme, sans précipitation.</span></li>
+        <li>${icon('leaf')}<span><b>Confort</b>Un moment calme, sans pression.</span></li>
       </ul>
     </div>
   </div>
@@ -285,7 +299,7 @@ ${pageHead('L’atelier', 'Un salon pensé <em>pour vous</em>', 'The Nail Atelie
 <section class="train train--page" aria-labelledby="fo-title">
   <div class="wrap train__in">
     <div><p class="eyebrow eyebrow--light" data-reveal>Formations</p><h2 class="h2" id="fo-title" data-reveal style="--d:.08s">Se former, <em>toujours</em></h2></div>
-    <div><p data-reveal style="--d:.12s">Les techniques évoluent vite. La nail artist se forme régulièrement, récemment à la manucure russe et à la retouche gainage, et intègre ces nouveautés à l’institut au fil des semaines.</p><p data-reveal style="--d:.18s">Suivez les actualités et les nouveautés sur Instagram.</p><a class="btn btn--light" data-reveal style="--d:.24s" href="${site.instagram}" rel="noopener">${icon('insta')}${site.instagramHandle}</a></div>
+    <div><p data-reveal style="--d:.12s">Les techniques évoluent vite. Manon se forme régulièrement, récemment à la manucure russe et à la retouche gainage, et intègre ces nouveautés au salon petit à petit.</p><p data-reveal style="--d:.18s">Suivez les actualités et les nouveautés sur Instagram.</p><a class="btn btn--light" data-reveal style="--d:.24s" href="${site.instagram}" rel="noopener">${icon('insta')}${site.instagramHandle}</a></div>
   </div>
 </section>
 <section class="cta cta--plain"><div class="wrap cta__in"><h2 class="h2" data-reveal>Envie d’un <em>moment pour vous</em> ?</h2><div class="actions actions--c" data-reveal style="--d:.1s">${bookBtn('btn btn--solid btn--lg', 'Réserver')}<a class="btn btn--text" href="${c.link('prestations')}">Voir les tarifs</a></div></div></section>
@@ -363,7 +377,7 @@ const fillV = (s) => s.replace(/\{\{(\w+)\}\}/g, (_, k) => val(k));
 function textPage(c, kind) {
   const T = kind === 'legal'
     ? { eyebrow: 'Informations', title: 'Mentions <em>légales</em>', secs: [
-      ['Éditeur du site', '<p>Ce site est édité par <strong>{{company}}</strong> ({{legalForm}}), qui exploite le salon « The Nail Atelier ».</p><p>Adresse : {{address}}.<br>Numéro d’entreprise (BCE) : {{bce}}<br>N° de TVA : {{vat}}<br>Téléphone : {{phone}}<br>E-mail : {{email}}</p><p>Responsable de la publication : {{owner}}.</p>'],
+      ['Éditeur du site', '<p>Ce site est édité par <strong>{{company}}</strong> ({{legalForm}}), qui exploite le salon « The Nail Atelier ».</p><p>Adresse : {{address}}.<br>Numéro d’entreprise (BCE) : {{bce}}<br>N° de TVA : {{vat}}<br>Téléphone : {{phone}}<br>E-mail : {{email}}</p><p>Responsable de la publication : {{publisher}}.</p>'],
       ['Hébergement', '<p>Le site est hébergé par {{host}}.</p>'],
       ['Prix et prestations', '<p>Les prix sont indiqués en euros, toutes taxes comprises. Les durées sont indicatives. Les tarifs peuvent évoluer ; en cas de doute, la grille communiquée lors de la réservation fait foi.</p>'],
       ['Réservation, acompte et annulation', '<p>Les rendez-vous se réservent sur la plateforme de réservation Optios. Un acompte de ' + site.deposit + ' € est demandé et déduit du prix de la prestation. Les conditions d’annulation figurent sur la page « Infos pratiques ».</p>'],
